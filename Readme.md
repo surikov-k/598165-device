@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Константин Суриков](https://up.htmlacademy.ru/htmlcss/20/user/598165).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
