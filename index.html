@@ -5,43 +5,108 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  <header class="main-header">
+    <header class="main-header">
+      <nav class="main-navigation">
 
-    <a><img src="img/main-logo.png" class="main-header-logo"
-        alt="Лого магазина «Девайс»"></a>
+        <a><img src="img/main-logo.png" class="main-header-logo"
+          alt="Лого магазина «Девайс»"></a>
 
-    <nav class="main-navigation">
+        <nav class="site-tools">
+          <input type="text" name="search" id=""
+          placeholder="Поиск по сайту">
 
-      <nav class="site-tools">
-        <input type="text" name="search" id=""
-        placeholder="Поиск по сайту">
+          <ul class="user-menu">
+          <li><a href="#">Войти</a></li>
+          </ul>
 
-        <ul class="user-menu">
-        <li><a href="#">Войти</a></li>
+          <a href="#">Сравнить</a>
+
+          <a href="#">Корзина</a>
+        </nav>
+
+        <ul class="site-navigation">
+          <li><a href="#">Каталог товаров</a>
+            <ul><a href="#">Виртуальная реальность</a></ul>
+            <ul><a href="#">Моноподы для селфи</a></ul>
+            <ul><a href="#">Экшн-камеры</a></ul>
+            <ul><a href="#">Фитнес-браслеты</a></ul>
+            <ul><a href="#">Умные часы</a></ul>
+            <ul><a href="#">Квадрокоптеры</a></ul>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-
-        <a href="#">Сравнить</a>
-
-        <a href="#">Корзина</a>
       </nav>
+    </header>
 
-      <ul class="site-navigation">
-        <li><a href="#">Каталог товаров</a>
-          <ul><a href="#">Виртуальная реальность</a></ul>
-          <ul><a href="#">Моноподы для селфи</a></ul>
-          <ul><a href="#">Экшн-камеры</a></ul>
-          <ul><a href="#">Фитнес-браслеты</a></ul>
-          <ul><a href="#">Умные часы</a></ul>
-          <ul><a href="#">Квадрокоптеры</a></ul>
-        </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин электроники «Девайс»</h1>
+      <h2 class="visually-hidden">Промо товары</h2>
 
-    </nav>
-  </header>
+      <!-- begin hero -->
+      <section class="hero">
+          <ol class="hero-slider">
+            <li>
+              <div class="slider">
+                <img src="img/slider1.png" alt="">
+                <h3>Делай селфи,<br> как Бен Стиллер! </h3>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a href="#">Подробнее</a>
+                <table>
+                  <tr>
+                    <th>Длина палки</th>
+                    <th>Вес палки</th>
+                    <th>Материал</th>
+                  </tr>
+                  <tr>
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
 
+            <li>
+              <div class="slider">
+                <img src="img/slider2.png" alt="">
+                <h3>Худеем <br> правильно! </h3>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#">Подробнее</a>
+                <table>
+                  <tr>
+                    <th>Без подзарядки</th>
+                  </tr>
+                  <tr>
+                    <td>48 часов</td>
+                  </tr>
+                </table>
+            </div>
+            </li>
 
+            <li>
+              <div class="slider">
+                <img src="img/slider3.png" alt="">
+                <h3>Порхает как бабочка,<br>жалит как пчела! </h3>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a href="#">Подробнее</a>
+                <table>
+                  <tr>
+                    <th>Дальность полета</th>
+                    <th>Радиус поражения</th>
+                  </tr>
+                  <tr>
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                </table>
+            </div>
+            </li>
+          </ol>
+      </section>
+      <!-- end hero -->
+
+    </main>
   </body>
 </html>
