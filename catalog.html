@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
   </head>
   <body>
     <header class="main-header">
@@ -10,11 +10,10 @@
         <img src="img/main-logo.png"
           alt="Лого магазина «Девайс»">
       </a>
-      <div class="header-tools">
-        <input type="text" name="search" id="search"
-        placeholder="Поиск по сайту">
+      <div class="header-links">
+        <input type="text" name="search" id="search" placeholder="Поиск по сайту">
         <ul class="user-menu">
-          <!-- <li class="user-item">
+         <!--  <li class="user-item">
             <a class="user-link" href="#">Войти</a>
           </li> -->
           <li class="user-item">
@@ -24,34 +23,45 @@
             <a class="user-link" href="#">Выйти</a>
           </li>
         </ul>
-        <a class="header-tools-link" href="#">Сравнить</a>
-        <a class="header-tools-link" href="#">Корзина</a>
+        <a class="header-link" href="#">Сравнить</a>
+        <a class="header-link" href="#">Корзина</a>
       </div>
-      <nav class="main-navigation">
-        <ul class="navigation-items">
-          <li  class="menu-item submenu">
-            <a class="menu-link" href="#">Каталог товаров</a>
-            <ul>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">
-                  Виртуальная реальность</a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li  class="main-nav-item submenu">
+            <a class="main-nav-link" href="#">Каталог товаров</a>
+            <ul class="catalog-nav-list">
+              <li class="catalog-nav-item">
+                <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
               </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="catalog.html">
-                  Моноподы для селфи</a>
+              <li class="catalog-nav-item">
+                <a class="catalog-nav-link" href="catalog.html">Моноподы для селфи</a>
               </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Экшн-камеры</a>
+              <li class="catalog-nav-item">
+                <a class="catalog-nav-link" href="#">Экшн-камеры</a>
               </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Фитнес-браслеты</a>
+              <li class="catalog-nav-item">
+                <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
               </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Умные часы</a>
+              <li class="catalog-nav-item">
+                <a class="catalog-nav-link" href="#">Умные часы</a>
               </li>
-              <li class="submenu-item">
-                <a class="submenu-link" href="#">Квадрокоптеры</a>
+              <li class="catalog-nav-item">
+                <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
               </li>
+            </ul>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
             </ul>
           </li>
           <li class="menu-item">
@@ -82,12 +92,12 @@
         </li>
       </ul>
 
-      <!-- begin shop-department -->
-      <section class="shop-department">
+      <!-- begin catalog-section -->
+      <section class="catalog-section">
         <p>Сортировка:</p>
-        <ul class="sorting">
+        <ul class="sorting-list">
           <li class="sorting-item">
-            <a class="sorting-link" href="#" class="current">По цене</a>
+            <a class="sorting-link current" href="#">По цене</a>
           </li>
           <li class="sorting-item">
             <a class="sorting-link" href="#">По типу</a>
@@ -96,64 +106,79 @@
             <a class="sorting-link" href="#">По популярности</a>
           </li>
         </ul>
-
-        <div class="department-items">
-          <article class="department-item">
-            <h3>Любительская селфи-палка</h3>
-            <a class="item-link" href="#">
-              <img src="img/item-1.jpg" alt="Товар 1">
-            </a>
-            <p>500 руб.</p>
-            <div class="item-overlay">
-              <a class="overlay-link" href="#">В корзину</a>
-              <a class="overlay-link" href="#">Добавить к сравнению</a>
-            </div>
-          </article>
-          <article class="department-item">
-            <h3>Любительская селфи-палка</h3>
-            <a href="#"><img src="img/item-2.jpg" alt="Товар 21"></a>
-            <p>500 руб.</p>
-            <div class="item-overlay">
-              <a class="overlay-link" href="#">В корзину</a>
-              <a class="overlay-link" href="#">Добавить к сравнению</a>
-            </div>
-          </article>
-          <article class="department-item">
-            <h3>Непотопляемая селфи-палка</h3>
-            <a href="#"><img src="img/item-3.jpg" alt="Товар 3"></a>
-            <p>2 500 руб.</p>
-            <div class="item-overlay">
-              <a class="overlay-link" href="#">В корзину</a>
-              <a class="overlay-link" href="#">Добавить к сравнению</a>
-            </div>
-          </article>
-          <article class="department-item new">
-            <h3>Селфи-палка «Следуй за мной» </h3>
-            <a href="#"><img src="img/item-4.jpg" alt="Товар 4"></a>
-            <p>4 900 руб.</p>
-            <div class="item-overlay">
-              <a class="overlay-link" href="#">В корзину</a>
-              <a class="overlay-link" href="#">Добавить к сравнению</a>
-            </div>
-          </article>
+        <ul class="catalog-section-list">
+          <li class="catalog-section-item">
+            <article class="catalog-section-card">
+              <h3>Любительская селфи-палка</h3>
+              <a class="item-link" href="#">
+                <img src="img/item-1.jpg" alt="Товар 1">
+              </a>
+              <p>500 руб.</p>
+              <div class="item-overlay">
+                <a class="overlay-link" href="#">В корзину</a>
+                <a class="overlay-link" href="#">Добавить к сравнению</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section-item">
+            <article class="catalog-section-card">
+              <h3>Любительская селфи-палка</h3>
+              <a class="item-link" href="#">
+                <img src="img/item-2.jpg" alt="Товар 2">
+              </a>
+              <p>500 руб.</p>
+              <div class="item-overlay">
+                <a class="overlay-link" href="#">В корзину</a>
+                <a class="overlay-link" href="#">Добавить к сравнению</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section-item">
+            <article class="catalog-section-card">
+              <h3>Непотопляемая селфи-палка</h3>
+              <a class="item-link" href="#">
+                <img src="img/item-3.jpg" alt="Товар 3">
+              </a>
+              <p>2 500 руб.</p>
+              <div class="item-overlay">
+                <a class="overlay-link" href="#">В корзину</a>
+                <a class="overlay-link" href="#">Добавить к сравнению</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-section-item">
+            <article class="catalog-section-card new">
+              <h3>Селфи-палка «Следуй за мной» </h3>
+              <a class="item-link" href="#">
+                <img src="img/item-4.jpg" alt="Товар 4">
+              </a>
+              <p>4 900 руб.</p>
+              <div class="item-overlay">
+                <a class="overlay-link" href="#">В корзину</a>
+                <a class="overlay-link" href="#">Добавить к сравнению</a>
+              </div>
+            </article>
+          </li>
         </div>
-        <div class="paginator">
-            <a class="paginator-link forth" href="#">Вперед</a>
-            <ul class="pages">
-              <li class="page-item">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-            </ul>
-            <a class="paginator-link back" href="#">Назад</a>
-          </div>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link back" href="#">Назад</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link forth" href="#">Вперед</a>
+          </li>
+        </ul>
       </section>
-      <!-- end  shop-department-->
+      <!-- end  catalog-section-->
 
       <!-- begin filter -->
         <section class="filter">
@@ -201,11 +226,19 @@
           <a class="services-link" href="#">Контакты</a>
         </li>
       </ul>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
-      <ul class="social-links">
-          <li><a class="social vk" href="#">В контакте</a></li>
-          <li><a class="social facebook" href="#">Facebook</a></li>
-          <li><a class="social instag ram"href="#">Instagram</a></li>
+      <p class="phone">
+        <a class="phone-link" href="#">Тел.: +7 (495) 495-95-95</a>
+      </p>
+      <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link vk" href="#">В контакте</a>
+          </li>
+          <li class="social-item">
+            <a class="social-link facebook" href="#">Facebook</a>
+          </li>
+          <li class="social-item">
+            <a class="social-link instagram"href="#">Instagram</a>
+          </li>
       </ul>
       <a class="copyright-link"
         href="https://htmlacademy.ru/intensive/htmlcss">
