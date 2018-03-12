@@ -257,13 +257,19 @@
       </p>
       <ul class="social-list">
           <li class="social-item">
-            <a class="social-link vk" href="#">В контакте</a>
+            <a class="social-link vk" href="#" area-label="В контакте">
+              В контакте
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link facebook" href="#">Facebook</a>
+            <a class="social-link facebook" href="#" area-label="Facebook">
+              Facebook
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link instagram"href="#">Instagram</a>
+            <a class="social-link instagram" href="#" area-label="Instagram">
+              Instagram
+            </a>
           </li>
       </ul>
       <a class="copyright-link"
@@ -276,7 +282,33 @@
     <section class="modal write-us-popup">
         <h2 class="visually-hidden">Напишите нам</h2>
         <!-- Form -->
-        <span class="close">x</span>
+        <form class="write-us-form"
+          action="https://echo.htmlacademy.ru"
+          method="post">
+          <p class="wite-us-form-item">
+            <label for="wite-us-name-field">
+              Ваше имя:
+            </label>
+            <input type="text" name="wite-us-name" id="wite-us-name-field"
+              placeholder="Имя Фамилия">
+          </p>
+          <p class="wite-us-form-item">
+            <label for="wite-us-email-field">
+              Ваш e-mail:
+            </label>
+            <input type="email" name="wite-us-email" id="wite-us-email-field"
+              placeholder="email@example.com">
+          </p>
+          <p class="wite-us-form-item">
+            <label for="wite-us-letter-field">
+              Текст письма:
+            </label>
+            <textarea name="wite-us-letter" id="wite-us-letter-field"
+              placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close">Закрыть</button>
     </section>
     <!-- end modal write-us-popup -->
 
@@ -284,9 +316,9 @@
     <section class="modal map-popoup">
         <h2 class="visually-hidden">Схема проезда</h2>
         <div class="map">
-          <img src="img/map-big.jpg" width="960" height="559" alt="Схема проезда">
+          <img src="img/map-big.jpg" width="960" height="559" alt="Наш адрес: Москва, ул. Строителей, 15">
         </div>
-        <span class="modal-close">x</span>
+        <button class="modal-close">Закрыть</button>
     </section>
     <!-- end modal map-popoup -->
   </body>
