@@ -11,7 +11,13 @@
           alt="Лого магазина «Девайс»">
       </a>
       <div class="header-links">
-        <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+          <button class="search-submit" type="submit">
+            <span class="visually-hidden">Найти</span>
+          </button>
+        </form>
+
         <ul class="user-menu">
          <!--  <li class="user-item">
             <a class="user-link" href="#">Войти</a>
@@ -59,19 +65,6 @@
           </li>
           <li class="main-nav-item">
             <a class="main-nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Доставка</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Гарантия</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -159,7 +152,7 @@
               </div>
             </article>
           </li>
-        </div>
+        </ul>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link back" href="#">Назад</a>
@@ -182,38 +175,35 @@
 
       <!-- begin filter -->
         <section class="filter">
-          <form action="https://echo.htmlacademy.com" method="get">
-
-          </form class="filter-form">
-            <h2>Фильтр:</h2>
+          <h2>Фильтр:</h2>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-fieldset">
               <legend>Стоимость</legend>
               <span>от 0</span>
-              <input type="range" min="0" max=4999 value="0">
+              <input type="range" min="0" max=5000 value="3000">
               <span> до 5000</span>
-              <input type="range" min="1" max="5000" value="3000">
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend>Цвет</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input class="filter-input-checked" type="checkbox" name="black" id="black-field" checked>
-                  Черный
+                  <input class="filter-checked" type="checkbox" name="black" id="black-field" checked>
+                  <label for="black-field">Черный</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-input-checkbox" type="checkbox" name="white" id="white-field">
+                  <input class="filter-checkbox" type="checkbox" name="white" id="white-field">
                   <label for="white-field">Белый</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-input-checkbox" type="checkbox" name="blue" id="blue-field" checked>
+                  <input class="filter-checkbox" type="checkbox" name="blue" id="blue-field" checked>
                   <label for="blue-field">Синий</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-input-checkbox" type="checkbox" name="red" id="red-field" checked>
+                  <input class="filter-checkbox" type="checkbox" name="red" id="red-field" checked>
                   <label for="red-field">Красный</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-input-checkbox" type="checkbox" name="pink" id="pink-field">
+                  <input class="filter-checkbox" type="checkbox" name="pink" id="pink-field">
                   <label for="pink-field">Розовый</label>
                 </li>
               </ul>
@@ -222,16 +212,18 @@
               <legend>Bluetooth</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input class="filter-input-radio" type="radio" name="bluetooth" id="bluetooth-yes-field" value="bluetooth-yes" checked>
+                  <input class="filter-radio" type="radio" name="bluetooth" id="bluetooth-yes-field" value="bluetooth-yes" checked>
                   <label for="bluetooth-yes-field">Есть</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-input-radio" type="radio" name="bluetooth" id="bluetooth-no-field" value="bt-no">
+                  <input class="filter-radio" type="radio" name="bluetooth" id="bluetooth-no-field" value="bt-no">
                   <label for="bluetooth-no-field">Нет</label>
                 </li>
               </ul>
             </fieldset>
             <button class="button" type="submit">Показать</button>
+          </form >
+        </section>
         <!-- end filter -->
 
     </main>
@@ -272,18 +264,18 @@
       </p>
       <ul class="social-list">
           <li class="social-item">
-            <a class="social-link vk" href="#" area-label="В контакте">
-              В контакте
+            <a class="social-link vk" href="#">
+              <span class="visually-hidden">В контакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link facebook" href="#" area-label="Facebook">
-              Facebook
+            <a class="social-link facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link instagram" href="#" area-label="Instagram">
-              Instagram
+            <a class="social-link instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
             </a>
           </li>
       </ul>

@@ -11,7 +11,12 @@
           alt="Лого магазина «Девайс»">
       </a>
       <div class="header-links">
-        <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+          <button class="search-submit" type="submit">
+            <span class="visually-hidden">Найти</span>
+          </button>
+        </form>
         <ul class="user-menu">
           <li class="user-item">
             <a class="user-link" href="#">Войти</a>
@@ -98,7 +103,7 @@
                 <tr class="slider-table-row">
                   <th class="slider-table-header">Без подзарядки</th>
                 </tr>
-                <tr lass="slider-table-row">
+                <tr class="slider-table-row">
                   <td class="slider-table-cell">48 часов</td>
                 </tr>
               </table>
@@ -257,18 +262,18 @@
       </p>
       <ul class="social-list">
           <li class="social-item">
-            <a class="social-link vk" href="#" area-label="В контакте">
-              В контакте
+            <a class="social-link vk" href="#">
+              <span class="visually-hidden">В контакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link facebook" href="#" area-label="Facebook">
-              Facebook
+            <a class="social-link facebook" href="#">
+              <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link instagram" href="#" area-label="Instagram">
-              Instagram
+            <a class="social-link instagram" href="#">
+              <span class="visually-hidden">Instagram</span>
             </a>
           </li>
       </ul>
@@ -282,33 +287,30 @@
     <section class="modal write-us-popup">
         <h2 class="visually-hidden">Напишите нам</h2>
         <!-- Form -->
-        <form class="write-us-form"
-          action="https://echo.htmlacademy.ru"
-          method="post">
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="wite-us-form-item">
-            <label for="wite-us-name-field">
+            <label class="write-us-label" for="name-field">
               Ваше имя:
             </label>
-            <input type="text" name="wite-us-name" id="wite-us-name-field"
-              placeholder="Имя Фамилия">
+            <input class="write-us-input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
           </p>
           <p class="wite-us-form-item">
-            <label for="wite-us-email-field">
+            <label class="write-us-label" for="email-field">
               Ваш e-mail:
             </label>
-            <input type="email" name="wite-us-email" id="wite-us-email-field"
-              placeholder="email@example.com">
+            <input class="write-us-input" type="email" name="email" id="email-field" placeholder="email@example.com">
           </p>
           <p class="wite-us-form-item">
-            <label for="wite-us-letter-field">
+            <label class="write-us-label" for="letter-field">
               Текст письма:
             </label>
-            <textarea name="wite-us-letter" id="wite-us-letter-field"
-              placeholder="В свободной форме"></textarea>
+            <textarea class="write-us-input write-us-textarea" name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="modal-close">Закрыть</button>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
     </section>
     <!-- end modal write-us-popup -->
 
@@ -318,7 +320,9 @@
         <div class="map">
           <img src="img/map-big.jpg" width="960" height="559" alt="Наш адрес: Москва, ул. Строителей, 15">
         </div>
-        <button class="modal-close">Закрыть</button>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
     </section>
     <!-- end modal map-popoup -->
   </body>
