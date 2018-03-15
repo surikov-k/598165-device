@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <a href="index.html" class="main-header-logo">
-        <img src="img/main-logo.svg"
-          alt="Лого магазина «Девайс»">
+        <img src="img/main-logo.svg" width="163" height="34" alt="Лого магазина «Девайс»">
       </a>
       <div class="header-links">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -87,7 +88,7 @@
 
       <!-- begin catalog-section -->
       <section class="catalog-section">
-        <p>Сортировка:</p>
+        <b>Сортировка:</b>
         <ul class="sorting-list">
           <li class="sorting-item">
             <a class="sorting-link current" href="#">По цене</a>
@@ -102,53 +103,53 @@
         <ul class="catalog-section-list">
           <li class="catalog-section-item">
             <article class="product">
-              <h3>Любительская селфи-палка</h3>
+              <h3 class="product-name">Любительская селфи-палка</h3>
               <a class="product-link" href="#">
                 <img src="img/item-1.jpg" width="360" height="380" alt="Товар 1">
               </a>
-              <p>500 руб.</p>
+              <p class="product-price">500 руб.</p>
               <div class="product-overlay">
-                <a class="overlay-link" href="#">В корзину</a>
-                <a class="overlay-link" href="#">Добавить к сравнению</a>
+                <a class="button" href="#">В корзину</a>
+                <a class="product-compare-link" href="#">Добавить к сравнению</a>
               </div>
             </article>
           </li>
           <li class="catalog-section-item">
             <article class="product">
-              <h3>Любительская селфи-палка</h3>
+              <h3 class="product-name">Любительская селфи-палка</h3>
               <a class="product-link" href="#">
                 <img src="img/item-2.jpg" width="360" height="380" alt="Товар 2">
               </a>
-              <p>500 руб.</p>
+              <p class="product-price">500 руб.</p>
               <div class="product-overlay">
-                <a class="overlay-link" href="#">В корзину</a>
-                <a class="overlay-link" href="#">Добавить к сравнению</a>
+                <a class="button" href="#">В корзину</a>
+                <a class="product-compare-link" href="#">Добавить к сравнению</a>
               </div>
             </article>
           </li>
           <li class="catalog-section-item">
             <article class="product">
-              <h3>Непотопляемая селфи-палка</h3>
+              <h3 class="product-name">Непотопляемая селфи-палка</h3>
               <a class="product-link" href="#">
                 <img src="img/item-3.jpg" width="360" height="380" alt="Товар 3">
               </a>
-              <p>2 500 руб.</p>
+              <p class="product-price">2 500 руб.</p>
               <div class="product-overlay">
-                <a class="overlay-link" href="#">В корзину</a>
-                <a class="overlay-link" href="#">Добавить к сравнению</a>
+                <a class="button" href="#">В корзину</a>
+                <a class="product-compare-link" href="#">Добавить к сравнению</a>
               </div>
             </article>
           </li>
           <li class="catalog-section-item">
             <article class="product new">
-              <h3>Селфи-палка «Следуй за мной» </h3>
+              <h3 class="product-name">Селфи-палка «Следуй за мной» </h3>
               <a class="product-link" href="#">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Товар 4">
               </a>
-              <p>4 900 руб.</p>
+              <p class="product-price">4 900 руб.</p>
               <div class="product-overlay">
-                <a class="overlay-link" href="#">В корзину</a>
-                <a class="overlay-link" href="#">Добавить к сравнению</a>
+                <a class="button" href="#">В корзину</a>
+                <a class="product-compare-link" href="#">Добавить к сравнению</a>
               </div>
             </article>
           </li>
@@ -158,7 +159,7 @@
             <a class="pagination-link back" href="#">Назад</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -233,7 +234,7 @@
         <img   src="img/footer-logo.svg" width="162" height="34" alt="Лого магазина «Девайс»">
       </a>
       <p class="address">г. Москва, ул. Строителей, 15</p>
-      <div class="footer-tools">
+      <div class="footer-links">
         <ul class="user-menu">
           <!-- <li class="user-item">
             <a class="user-link" href="#">Войти</a>
@@ -245,18 +246,18 @@
             <a class="user-link" href="#">Выйти</a>
           </li>
         </ul>
-        <a class="footer-tools-link" href="#">Сравнить</a>
-        <a class="footer-tools-link" href="#">Корзина</a>
+        <a class="footer-link" href="#">Сравнить</a>
+        <a class="footer-link" href="#">Корзина</a>
       </div>
-      <ul class="services">
-        <li class="services-item">
-          <a class="services-link" href="#">Доставка</a>
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Доставка</a>
         </li>
-        <li class="services-item">
-          <a class="services-link" href="#">Гарантия</a>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Гарантия</a>
         </li>
-        <li class="services-item">
-          <a class="services-link" href="#">Контакты</a>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Контакты</a>
         </li>
       </ul>
       <p class="phone">

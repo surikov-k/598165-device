@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -79,7 +81,7 @@
               <img src="img/slider-1.png" width="384" height="486" alt="Фото 1">
               <h3>Делай селфи,<br> как Бен Стиллер! </h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a href="#">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="slider-table">
                 <tr class="slider-table-row">
                   <th class="slider-table-header">Длина палки</th>
@@ -98,7 +100,7 @@
               <h3>Худеем <br> правильно! </h3>
               <p>Мотивирующие фитнес-браслеты помогут найти
               в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="slider-table">
                 <tr class="slider-table-row">
                   <th class="slider-table-header">Без подзарядки</th>
@@ -114,7 +116,7 @@
               <p>Этот обычный, на первый взгляд,
                 квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.</p>
-              <a href="#">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="slider-table">
                 <tr class="slider-table-row">
                   <th class="slider-table-header">Дальность полета</th>
@@ -161,7 +163,7 @@
         <h2 class="visually-hidden">Дополнительный услуги</h2>
           <ul class="services-list">
             <li class="services-item">
-              <a class="services-link" href="#">Доставка</a>
+              <a class="services-link current">Доставка</a>
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
@@ -209,7 +211,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">Подробнее о нас</a>
+        <a class="button" href="#">Подробнее о нас</a>
 
       </section>
       <!-- end about -->
@@ -221,8 +223,10 @@
           Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
       </section>
-      <img src="img/map.jpg" width="560" height="222" alt="Карта">
-      <a href="#">Напишите нам</a>
+      <p class="contacts-map">
+        <img src="img/map.jpg" width="560" height="222" alt="Карта">
+      </p>
+      <a class="button" href="#">Напишите нам</a>
       <!-- end contacts -->
     </main>
 
@@ -231,7 +235,7 @@
         <img  src="img/footer-logo.svg" width="162" height="34" alt="Лого магазина «Девайс»">
       </a>
       <p class="address">г. Москва, ул. Строителей, 15</p>
-      <div class="footer-tools">
+      <div class="footer-links">
         <ul class="user-menu">
           <li class="user-item">
             <a class="user-link" href="#">Войти</a>
@@ -243,18 +247,18 @@
             <a class="user-link" href="#">Выйти</a>
           </li> -->
         </ul>
-        <a class="footer-tools-link" href="#">Сравнить</a>
-        <a class="footer-tools-link" href="#">Корзина</a>
+        <a class="footer-link" href="#">Сравнить</a>
+        <a class="footer-link" href="#">Корзина</a>
       </div>
-      <ul class="services">
-        <li class="services-item">
-          <a class="services-link" href="#">Доставка</a>
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Доставка</a>
         </li>
-        <li class="services-item">
-          <a class="services-link" href="#">Гарантия</a>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Гарантия</a>
         </li>
-        <li class="services-item">
-          <a class="services-link" href="#">Контакты</a>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">Контакты</a>
         </li>
       </ul>
       <p class="phone">
@@ -315,7 +319,7 @@
           <img src="img/map-big.jpg" width="960" height="559" alt="Наш адрес: Москва, ул. Строителей, 15">
         </div>
         <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть карту</span>
         </button>
     </section>
     <!-- end modal map-popoup -->
