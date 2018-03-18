@@ -21,7 +21,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/gilroylight-webfont.woff2") format("woff2"), url("../fonts/gilroylight-webfont.woff") format("woff");
@@ -43,7 +42,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   color: #464646;
@@ -52,22 +50,21 @@ body {
   letter-spacing: 0.01em;
 }
 
-.page a {
+a {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
 }
 
-.page a:hover {
+a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.page a:active {
+a:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.page h1,
-.page h2,
-.page h3 {
+section h2,
+section h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -127,10 +124,6 @@ body {
 }
 
 .catalog-nav-link {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  text-transform: none;
-  font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.01em;
 }
@@ -182,14 +175,14 @@ list-style: none;
   color: #ffffff;
 }
 
-.page.inner .main-header-logo:hover,
-.page.inner .main-footer-logo:hover,
+.inner .main-header-logo:hover,
+.inner .main-footer-logo:hover,
 .copyright-link:hover {
   opacity: 0.6;
 }
 
-.page.inner .main-header-logo:active,
-.page.inner .main-footer-logo:active,
+.inner .main-header-logo:active,
+.inner .main-footer-logo:active,
 .copyright-link:active {
   opacity: 0.3;
 }
@@ -251,8 +244,6 @@ list-style: none;
   line-height: 24px;
 }
 
-
-
 .breadcrumbs {
   padding: 0;
   list-style: none;
@@ -270,10 +261,6 @@ list-style: none;
   color: rgba(0, 0, 0, 0.1);
 }
 
-.sorting {
-  font-family: "OpenSans", Arial, sans-serif;
-}
-
 .filter h3,
 .sorting h3 {
   font-family: "Gilroy", Arial, sans-serif;
@@ -282,7 +269,10 @@ list-style: none;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
 
+.sorting {
+  font-weight: normal;
 }
 
 .sorting-list {
