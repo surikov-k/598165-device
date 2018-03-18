@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body class="inner-page">
+  <body class="page inner">
     <header class="main-header">
       <a href="index.html" class="main-header-logo">
         <img src="img/main-logo.svg" width="163" height="34" alt="Лого магазина «Девайс»">
@@ -88,18 +88,20 @@
 
       <!-- begin catalog-section -->
       <section class="catalog-section">
-        <b>Сортировка:</b>
-        <ul class="sorting-list">
-          <li class="sorting-item">
-            <a class="sorting-link current" href="#">По цене</a>
-          </li>
-          <li class="sorting-item">
-            <a class="sorting-link" href="#">По типу</a>
-          </li>
-          <li class="sorting-item">
-            <a class="sorting-link" href="#">По популярности</a>
-          </li>
-        </ul>
+        <div class="sorting">
+          <h3>Сортировка:</h3>
+          <ul class="sorting-list">
+            <li class="sorting-item">
+              <a class="sorting-link current" href="#">По цене</a>
+            </li>
+            <li class="sorting-item">
+              <a class="sorting-link" href="#">По типу</a>
+            </li>
+            <li class="sorting-item">
+              <a class="sorting-link" href="#">По популярности</a>
+            </li>
+          </ul>
+        </div>
         <ul class="catalog-section-list">
           <li class="catalog-section-item">
             <article class="product">
@@ -159,7 +161,7 @@
             <a class="pagination-link back" href="#">Назад</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link current">1</a>
+            <a class="pagination-link current" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -176,7 +178,7 @@
 
       <!-- begin filter -->
         <section class="filter">
-          <h2>Фильтр:</h2>
+          <h3>Фильтр:</h3>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-fieldset">
               <legend>Стоимость</legend>
@@ -230,7 +232,7 @@
     </main>
 
     <footer class="main-footer">
-      <a class="main-header-logo">
+      <a class="main-footer-logo" href="index.html">
         <img   src="img/footer-logo.svg" width="162" height="34" alt="Лого магазина «Девайс»">
       </a>
       <p class="address">г. Москва, ул. Строителей, 15</p>
