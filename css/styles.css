@@ -63,8 +63,8 @@ a:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
-section h2,
-section h3 {
+.section-title,
+.slide-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -175,14 +175,14 @@ list-style: none;
   color: #ffffff;
 }
 
-.inner .main-header-logo:hover,
-.inner .main-footer-logo:hover,
+.main-header-logo[href]:hover,
+.main-footer-logo[href]:hover,
 .copyright-link:hover {
   opacity: 0.6;
 }
 
-.inner .main-header-logo:active,
-.inner .main-footer-logo:active,
+.main-header-logo[href]:active,
+.main-footer-logo[href]:active,
 .copyright-link:active {
   opacity: 0.3;
 }
