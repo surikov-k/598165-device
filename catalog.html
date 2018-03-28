@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header container">
-      <a class="main-header-logo" href="index.html">
+      <a href="index.html" class="main-header-logo">
         <img src="img/main-logo.svg" width="163" height="34"
         alt="Лого магазина «Девайс»">
       </a>
@@ -20,18 +20,15 @@
           </button>
         </form>
         <ul class="user-menu">
-          <li class="user-item">
-            <a class="user-link hidden" href="#">Войти</a>
+          <li class="user-menu-item">
+            <a class="header-link enter" href="#">Валентин Петухов</a>
           </li>
-          <li class="user-item ">
-            <a class="user-link" href="#">Валентин Петухов</a>
-          </li>
-          <li class="user-item ">
-            <a class="user-link" href="#">Выйти</a>
+          <li class="user-menu-item --hidden">
+            <a class="header-link exit" href="#">Выйти</a>
           </li>
         </ul>
-        <a class="header-link" href="#">Сравнить</a>
-        <a class="header-link" href="#">Корзина</a>
+        <a class="header-link compare" href="#">Сравнить</a>
+        <a class="header-link cart" href="#">Корзина</a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -93,7 +90,7 @@
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link current">Моноподы для селфи</a>
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -170,11 +167,8 @@
           <ul class="catalog-section-list">
             <li class="catalog-section-item">
               <article class="product">
-                <h3 class="product-name">Любительская селфи-палка</h3>
-                <a class="product-link" href="#">
-                  <img src="img/item-1.jpg" width="360" height="380" alt="Товар 1">
-                </a>
-                <p class="product-price">500 руб.</p>
+                <img src="img/item-1.jpg" width="360" height="380" alt="Товар 1">
+                <h3 class="product-title"><span class="product-name">Любительская селфи-палка</span> <span class="product-price">500 руб.</span></h3>
                 <div class="product-overlay">
                   <a class="button" href="#">В корзину</a>
                   <a class="product-compare-link" href="#">Добавить к сравнению</a>
@@ -183,11 +177,9 @@
             </li>
             <li class="catalog-section-item">
               <article class="product">
-                <h3 class="product-name">Любительская селфи-палка</h3>
-                <a class="product-link" href="#">
+
                   <img src="img/item-2.jpg" width="360" height="380" alt="Товар 2">
-                </a>
-                <p class="product-price">500 руб.</p>
+                  <h3 class="product-title"><span class="product-name">Профессиональная селфи-палка</span> <span class="product-price">1500 руб.</span></h3>
                 <div class="product-overlay">
                   <a class="button" href="#">В корзину</a>
                   <a class="product-compare-link" href="#">Добавить к сравнению</a>
@@ -196,11 +188,8 @@
             </li>
             <li class="catalog-section-item">
               <article class="product">
-                <h3 class="product-name">Непотопляемая селфи-палка</h3>
-                <a class="product-link" href="#">
                   <img src="img/item-3.jpg" width="360" height="380" alt="Товар 3">
-                </a>
-                <p class="product-price">2 500 руб.</p>
+                  <h3 class="product-title"><span class="product-name">Непотопляемая селфи-палка</span> <span class="product-price">2500 руб.</span></h3>
                 <div class="product-overlay">
                   <a class="button" href="#">В корзину</a>
                   <a class="product-compare-link" href="#">Добавить к сравнению</a>
@@ -209,11 +198,8 @@
             </li>
             <li class="catalog-section-item">
               <article class="product new">
-                <h3 class="product-name">Селфи-палка «Следуй за мной» </h3>
-                <a class="product-link" href="#">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Товар 4">
-                </a>
-                <p class="product-price">4 900 руб.</p>
+                  <h3 class="product-title"><span class="product-name">Селфи-палка «Следуй за мной»</span> <span class="product-price">4 900 руб.</span></h3>
                 <div class="product-overlay">
                   <a class="button" href="#">В корзину</a>
                   <a class="product-compare-link" href="#">Добавить к сравнению</a>
@@ -246,22 +232,19 @@
     <footer class="main-footer">
       <div class="container">
         <div class="footer-row">
-          <a class="main-footer-logo" href="index.html">
+          <a href="index.html" class="main-footer-logo">
             <img  src="img/footer-logo.svg" width="162" height="34" alt="Лого магазина «Девайс»">
           </a>
-          <ul class="user-menu">
-            <!--  <li class="user-item">
-              <a class="footer-link" href="#">Войти</a>
-            </li> -->
-            <li class="user-item">
-              <a class="footer-link" href="#">Валентин Петухов</a>
+          <ul class="footer-user-menu">
+            <li class="footer-user-item">
+              <a class="footer-link footer-enter" href="#">Валентин Петухов</a>
             </li>
-            <li class="user-item">
-              <a class="footer-link" href="#">Выйти</a>
+            <li class="footer-user-item --hidden">
+              <a class="footer-link footer-exit" href="#">Выйти</a>
             </li>
           </ul>
-          <a class="footer-link" href="#">Сравнить</a>
-          <a class="footer-link" href="#">Корзина</a>
+          <a class="footer-link footer-compare" href="#">Сравнить</a>
+          <a class="footer-link footer-cart" href="#">Корзина</a>
         </div>
         <div class="footer-row">
           <p class="address">г. Москва, ул. Строителей, 15</p>
@@ -277,19 +260,19 @@
             </li>
           </ul>
           <p class="phone">
-            <a class="phone-link" href="#">Тел.: +7 (495) 495-95-95</a>
+            <a class="phone-link" href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
           </p>
         </div>
         <div class="footer-row dash">
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link vk" href="#" aria-label="В контакте"></a>
-            </li>
-            <li class="social-item">
-              <a class="social-link facebook" href="#" aria-label="Facebook"></a>
+              <a class="social-link fb" href="#" aria-label="Facebook"></a>
             </li>
             <li class="social-item">
               <a class="social-link instagram" href="#" aria-label="Instagram"></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link twitter" href="#" aria-label="Twitter"></a>
             </li>
           </ul>
           <a class="copyright-link"
