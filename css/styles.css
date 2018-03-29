@@ -126,10 +126,11 @@ a[href]:active {
   font-weight: 800;
   line-height: 40px;
 
-  display: table;
+  display: block;
 
+  width: 220px;
   height: 40px;
-  padding: 0 45px;
+  padding: 0;
 
   text-align: center;
   vertical-align: middle;
@@ -181,46 +182,6 @@ a[href]:active {
 .main-footer-logo[href]:active,
 .copyright-link:active {
   opacity: 0.3;
-}
-
-.search-form {
-  position: relative;
-
-  box-sizing: border-box;
-  width: 500px;
-  height: 47px;
-  margin-right: 20px;
-  padding-left: 24px;
-
-  /*outline: 1px solid blue;*/
-}
-
-.search-form::before {
-  position: absolute;
-  top: 16px;
-  left: 3px;
-
-  width: 16px;
-  height: 16px;
-
-  content: "";
-  vertical-align: middle;
-  /*outline: 1px solid tomato;*/
-
-  background: url(../img/iterface-icons/search.svg) no-repeat;
-}
-
-.search-input {
-  font: inherit;
-  line-height: 47px;
-
-  padding: 0;
-  padding-left: 15px;
-
-  vertical-align: middle;
-
-  border: none;
-  background: none;
 }
 
 .header-links {
@@ -777,19 +738,23 @@ a[href]:active {
   margin: 0;
   margin-top: 67px;
   padding: 0;
-  padding-left: 35px;
+  /*padding-left: 35px;*/
 
   list-style: none;
 }
 
 .about li {
   position: relative;
+
+  padding-left: 34px;
+
+  /*outline: 1px dashed lime;*/
 }
 
 .about li::before {
   position: absolute;
   top: 15px;
-  left: -34px;
+  left: 0;
 
   width: 4px;
   height: 4px;
@@ -1026,6 +991,10 @@ a[href]:active {
 
 .inner .container {
   position: relative;
+}
+
+.inner {
+  overflow-x: hidden;
 }
 
 .tricky-background::before {
@@ -1280,8 +1249,8 @@ a[href]:active {
   height: 60px;
 
   content: "";
-
   /*outline: 1px dashed lime;*/
+
   background: url(../img/new-label.svg) no-repeat 50% 50%;
 }
 
@@ -1349,10 +1318,13 @@ a[href]:active {
 }
 
 .filter-fieldset {
+  width: 200px;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   border: 0;
+  /*outline: 1px dashed lime;*/
 }
 
 .filter-fieldset legend {
@@ -1361,15 +1333,269 @@ a[href]:active {
   font-weight: 800;
   line-height: 24px;
 
+  position: relative;
+
+  padding-top: 12px;
+
   letter-spacing: 0.01em;
 }
 
+.filter-fieldset legend::before {
+  position: absolute;
+  top: 0;
+
+  display: block;
+
+  width: 200px;
+  height: 2px;
+
+  content: "";
+
+  background-color: #000000;
+}
+
 .filter-list {
+  line-height: 40px;
+
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 5px;
   padding: 0;
 
   list-style: none;
 }
 
+.filter-item {
+  padding-left: 40px;
+}
+
+.filter-item label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.range-filter {
+  width: 200px;
+  margin-top: 26px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 12px;
+  margin-left: -7px;
+  padding-top: 9px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 0 0 #e6e5e6;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 115px;
+}
+
+.price-controls {
+  font-size: 0;
+
+  padding-top: 2px;
+}
+
+.price-controls label {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+
+  display: inline-block;
+
+  color: #cfcfcf;
+}
+
+.price-controls input {
+  width: 70px;
+  margin: 0;
+  padding: 0;
+
+  color: #cfcfcf;
+  border: none;
+  background: transparent;
+}
+
+.filter-form .button {
+  width: 200px;
+}
+
+.filter-input:hover + label::before {
+  opacity: 0.6;
+}
+
+.filter-input:focus + label::before {
+  border-bottom: 1px dotted #f0c52f;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-checkbox + label::before {
+  position: absolute;
+  top: 6px;
+  left: -41px;
+
+  width: 24px;
+  height: 26px;
+
+  content: "";
+
+  background: url("../img/iterface-icons/checkbox-off.svg") no-repeat 0 0;
+}
+
+.filter-checkbox:checked + label::before {
+  top: 6px;
+  left: -41px;
+
+  width: 26px;
+  height: 26px;
+
+  background: url("../img/iterface-icons/checkbox-on.svg") no-repeat 0 0;
+}
+
+.filter-radio + label::before {
+  position: absolute;
+  top: 6px;
+  left: -41px;
+
+  width: 26px;
+  height: 26px;
+
+  content: "";
+
+  background: url("../img/iterface-icons/radio-off.svg") no-repeat 0 0;
+}
+
+.filter-radio:checked + label::before {
+  top: 6px;
+  left: -41px;
+
+  width: 26px;
+  height: 26px;
+
+  background: url("../img/iterface-icons/radio-on.svg") no-repeat 0 0;
+}
+
 .hidden {
   display: none;
+}
+
+.search-form {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 500px;
+  height: 47px;
+  margin-right: 20px;
+
+  /*outline: 1px solid blue;*/
+}
+
+.search-form::before {
+  position: absolute;
+  top: 16px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  content: "";
+  /*outline: 1px solid tomato;*/
+
+  background: url(../img/iterface-icons/search.svg) no-repeat;
+}
+
+.search-input {
+  font: inherit;
+  line-height: 47px;
+
+  width: 356px;
+  padding: 0;
+  padding-right: 10px;
+  padding-left: 40px;
+
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.search-input:focus {
+  border-bottom: 1px solid #000000;
+}
+
+.search-input::placeholder {
+  opacity: 0.3;
+}
+
+.search-input:hover::placeholder {
+  opacity: 0.6;
+}
+
+.search-submit {
+  font-family: inherit;
+
+  width: 85px;
+  height: 47px;
+  margin-left: -4px;
+
+  border: none;
+  border: 1px solid black;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-submit:hover,
+.search-submit:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.search-input:not(:focus) + .search-submit {
+  opacity: 0;
 }
