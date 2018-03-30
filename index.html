@@ -316,44 +316,41 @@
       </div>
     </footer>
     <!-- begin modal write-us-popup -->
-    <section class="modal write-us-popup hidden">
+    <section class="modal write-us-popup">
       <h2 class="visually-hidden">Напишите нам</h2>
       <!-- Form -->
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="wite-us-form-item">
+        <p class="write-us-item">
           <label class="write-us-label" for="name-field">
             Ваше имя:
           </label>
           <input class="write-us-input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
         </p>
-        <p class="wite-us-form-item">
+        <p class="write-us-item">
           <label class="write-us-label" for="email-field">
             Ваш e-mail:
           </label>
           <input class="write-us-input" type="email" name="email" id="email-field" placeholder="email@example.com">
         </p>
-        <p class="wite-us-form-item">
+        <p class="write-us-item">
           <label class="write-us-label" for="letter-field">
             Текст письма:
           </label>
-          <textarea class="write-us-input write-us-textarea" name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
+          <textarea class="write-us-textarea" name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-      </button>
+      <button class="modal-close" type="button" ">Закрыть</button>
+      <!-- <span class="visually-hidden">Закрыть</span> -->
     </section>
     <!-- end modal write-us-popup -->
     <!-- begin modal map-popoup -->
-    <section class="modal map-popoup hidden">
+    <section class="modal map-popup">
       <h2 class="visually-hidden">Схема проезда</h2>
       <div class="map">
         <img src="img/map-big.jpg" width="960" height="559" alt="Наш адрес: Москва, ул. Строителей, 15">
       </div>
-      <button class="modal-close" type="button">
-      <span class="visually-hidden">Закрыть карту</span>
-      </button>
+      <button class="modal-close" type="button">Закрыть карту</button>
     </section>
     <!-- end modal map-popoup -->
   </body>
