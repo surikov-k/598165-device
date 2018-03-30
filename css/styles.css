@@ -66,11 +66,11 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-a[href]:hover {
+a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-a[href]:active {
+a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -978,8 +978,6 @@ a[href]:active {
   line-height: 24px;
 }
 
-
-
 .page-title {
   margin-top: 40px;
   margin-bottom: 18px;
@@ -992,21 +990,13 @@ a[href]:active {
   margin-bottom: 4px;
 }
 
-
-
 .catalog-background {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
-  linear-gradient(to right, #efefef, #efefef),
-  linear-gradient(to right, white, white);
+  linear-gradient(to right, #efefef, #efefef);
   background-repeat: no-repeat;
   background-size: 100% 70px,
-  328px 100%,
-  100% 100%;
-}
-.catalog-background-underlay {
-  background-size: 100% 70px,
-  50% 100%,
-  100% 100%;
+  50% 100%;
+  margin-bottom: 4px;
 }
 
 .breadcrumbs {
@@ -1052,11 +1042,12 @@ a[href]:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs-link[href]:hover {
+.breadcrumbs-link:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs-link[href]:active {
+.breadcrumbs-link:active,
+.breadcrumbs-item:last-child a {
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -1121,7 +1112,13 @@ a[href]:active {
 
 .catalog-section {
   width: 760px;
-  margin-bottom: 68px;
+  padding-bottom: 68px;
+  padding-left: 72px;
+
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08));
+  background-repeat: no-repeat;
+  background-size: 100% 70px;
 
   /*outline: 1px solid pink;*/
 }
