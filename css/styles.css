@@ -941,16 +941,6 @@ a:active {
   margin-left: 60px;
 }
 
-.second-background {
-  background-image: linear-gradient(to right, #efefef, #efefef),
-  linear-gradient(to right, #ffffff, #ffffff);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top,
-  left left;
-  background-size: 50% 100%,
-  100% 100%;
-}
-
 .breadcrumbs {
   display: flex;
 
@@ -1017,17 +1007,11 @@ a:active {
 }
 
 .first-background {
-  display: flex;
-
-  background-image: linear-gradient(to right, #dbdbdb, #dbdbdb),
-  linear-gradient(to right, #efefef, #efefef);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top,
-  left left;
-  background-size: 50% 100%,
-  100% 100%;
-
-  justify-content: center;
+  background-image: linear-gradient(to right, #efefef, #efefef),
+  linear-gradient(to right, #dbdbdb, #dbdbdb);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0 0;
+  background-size: 50% 100%, 100%, 100%;
 }
 
 .filter-title,
@@ -1054,8 +1038,8 @@ a:active {
   min-height: 70px;
   padding-top: 27px ;
   padding-right: 20px;
-  padding-left: 60px;
   padding-bottom: 27px;
+  padding-left: 60px;
 
   background-color: #dbdbdb;
 }
@@ -1135,23 +1119,24 @@ a:active {
 }
 
 .second-background {
-  display: flex;
-
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 4px;
+  background-image: linear-gradient(to right, #ffffff, #ffffff),
+  linear-gradient(to right, #efefef, #efefef);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0 0;
+  background-size: 50% 100%, 100%, 100%;
 }
 
 .filter {
   font-size: 14px;
 
-  box-sizing: border-box;
   width: 328px;
 
   background-color: #efefef;
 }
 
 .filter-form {
+  box-sizing: border-box;
+  width: 328px;
   margin-left: 60px;
   padding-top: 70px;
 }
@@ -1367,6 +1352,7 @@ a:active {
   display: flex;
 
   box-sizing: border-box;
+  width: 832px;
   margin: 0;
   margin-bottom: -18px;
   padding: 0;
