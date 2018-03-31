@@ -140,7 +140,7 @@ a:active {
   text-transform: uppercase;
 
   border: none;
-  outline: none;
+  /*outline: none;*/
   background: linear-gradient(to bottom, rgba(240,197,46,0) 0%,rgba(240,197,46,0) 36%,rgba(240,197,46,1) 36%,rgba(240,197,46,1) 60%,rgba(240,197,46,0) 60%,rgba(240,197,46,0) 100%);
 }
 
@@ -1028,19 +1028,10 @@ a:active {
 
 .filter h3 {
   padding: 27px 0;
-  padding-left: 60px;
   padding-right: 20px;
+  padding-left: 60px;
 
   background-color: #dbdbdb;
-}
-
-.sorting-list {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .sorting-item {
@@ -1060,6 +1051,63 @@ a:active {
 .sorting-link:active,
 .sorting-link.current {
   color: rgba(0, 0, 0, 1);
+}
+
+.sorting-list {
+  display: flex;
+
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+
+  list-style: none;
+
+  align-items: center;
+}
+
+.sorting-method {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sorting-method-item {
+  font-size: 0;
+  line-height: 0;
+
+  padding-left: 20px;
+}
+
+.sorting-button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  /*cursor: pointer;*/
+
+
+  border-top: none;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid rgba(31, 25, 26, 0.2);
+  border-left: 5px solid transparent;
+  /*outline: none;*/
+  background-color: transparent;
+}
+
+.sorting-descend {
+  transform: rotate(180deg);
+}
+
+.sorting-button:hover {
+  border-bottom-color: rgba(31, 25, 26, 0.6);
+}
+
+.sorting-button:active,
+.sorting-current {
+  border-bottom-color: rgba(31, 25, 26, 0.6);
 }
 
 .catalog-section {
@@ -1234,8 +1282,7 @@ a:active {
   box-sizing: border-box;
   width: 330px;
 
-    background-color: #efefef;
-
+  background-color: #efefef;
 }
 
 .filter-form {
@@ -1389,7 +1436,7 @@ a:active {
 }
 
 .filter-input:focus + label::before {
-  border-bottom: 1px dotted #f0c52f;
+  border-bottom: 2px solid #f0c52f;
 }
 
 .filter-input:disabled + label {
