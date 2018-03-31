@@ -341,11 +341,54 @@ a:active {
 }
 
 .slider {
+  position: relative;
+
   margin-bottom: 110px;
 
   counter-reset: slide-number;
 
   background: linear-gradient(to bottom, #f7e295 0%,#f7e295 24%,#ffffff 24%,#ffffff 24%,#ffffff 100%);
+}
+
+.slider-controls {
+  font-size: 0;
+  line-height: 0;
+
+  position: absolute;
+  z-index: 100;
+  top: 330px;
+  left: 997px;
+
+  text-align: center;
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+
+  cursor: pointer;
+
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.active::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 4px;
+  height: 4px;
+
+  content: "";
+
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .slider-item {
