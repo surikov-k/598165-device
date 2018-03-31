@@ -740,7 +740,13 @@ a:active {
 }
 
 .contacts-map {
-  margin-top: 40px;
+  font-size: 0;
+  /*display: block;*/
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .main-footer {
@@ -1083,11 +1089,10 @@ a:active {
 
 .sorting-button {
   position: relative;
+
   margin: 0;
   padding: 0;
-
   /*cursor: pointer;*/
-
 
   border-top: none;
   border-right: 5px solid transparent;
@@ -1567,25 +1572,33 @@ a:active {
 
 .modal {
   position: fixed;
-  top: 50%;
+  top: 150px;
   left: 50%;
 
   box-sizing: border-box;
   width: 960px;
-
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
+  margin-left: -480px;
 
   background-color: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .map-popup {
+  line-height: 0;
+  padding: 0;
   display: none;
 }
 
-.map img {
-  display: block;
+.embeded-map {
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  height: 560px;
+  font-size: 0;
+  line-height: 0;
 }
+
 
 .write-us-popup {
   display: none;
@@ -1715,4 +1728,55 @@ a:active {
 .write-us-popup .button {
   width: 200px;
   margin-top: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-400px);
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
