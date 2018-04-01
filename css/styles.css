@@ -83,6 +83,8 @@ a:active {
   line-height: 48px;
 
   margin: 0;
+
+  color: #000000;
 }
 
 .slider-title {
@@ -161,16 +163,35 @@ a:active {
 }
 
 .main-header {
-  width: 1040px;
-  padding: 17px 60px 43px 60px;
+  position: relative;
 
-  background: linear-gradient(to bottom, #ffffff 0%,#ffffff 15%,#f7e295 15%,#f7e295 15%,#f7e295 15%,#f7e295 100%);
+  box-sizing: border-box;
+  width: 1160px;
+
+  padding: 22px 60px 0 60px;
+
+  outline: 1px solid red;
+}
+
+.main-header::after {
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 0;
+
+  width: inherit;
+  height: 178px;
+
+  content: "";
+
+  background-color: #f7e295;
 }
 
 .main-header-logo {
   display: inline-block;
 
   margin-bottom: 9px;
+  outline: 1px solid red;
 }
 
 .main-header-logo[href]:hover,
@@ -191,6 +212,7 @@ a:active {
   margin-bottom: 29px;
 
   align-items: center;
+  outline: 1px solid red;
 }
 
 .user-menu {
@@ -277,6 +299,7 @@ a:active {
   padding: 0;
 
   list-style: none;
+  outline: 1px solid red;
 }
 
 .main-nav-item {
@@ -356,13 +379,26 @@ a:active {
 }
 
 .slider {
+  padding-top: 45px;
   position: relative;
 
   margin-bottom: 110px;
 
   counter-reset: slide-number;
+}
 
-  background: linear-gradient(to bottom, #f7e295 0%,#f7e295 24%,#ffffff 24%,#ffffff 24%,#ffffff 100%);
+.slider::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  width: inherit;
+  height: 160px;
+
+  content: "";
+
+  background-color: #f7e295;
 }
 
 .slider-controls {
@@ -458,15 +494,18 @@ a:active {
 
 .table-data-row {
   display: inline-block;
+
   order: 1;
 }
 
 .table-header-row {
-  display: inline-block;
   font-size: 13px;
   line-height: 20px;
 
+  display: inline-block;
+
   margin-top: 4px;
+
   order: 2;
 }
 
@@ -1629,9 +1668,9 @@ a:active {
 .search-input {
   font: inherit;
   line-height: 47px;
-  height: 47px;
 
   width: 356px;
+  height: 47px;
   padding: 0;
   padding-right: 10px;
   padding-left: 40px;
@@ -1677,8 +1716,8 @@ a:active {
   background-color: #000000;
 }
 
-.search-input:not(:focus) + .search-submit {
-  opacity: 0;
+.search-input:not(:focus) + .search-submit:not(:active) {
+  display: none;
 }
 
 .modal {
