@@ -168,7 +168,7 @@ a:active {
   box-sizing: border-box;
   width: 1160px;
 
-  padding: 22px 60px 0 60px;
+  padding: 22px 60px 45px 60px;
 
   outline: 1px solid red;
 }
@@ -180,7 +180,7 @@ a:active {
   left: 0;
 
   width: inherit;
-  height: 178px;
+  height: 185px;
 
   content: "";
 
@@ -379,7 +379,7 @@ a:active {
 }
 
 .slider {
-  padding-top: 45px;
+  padding-top: 0px;
   position: relative;
 
   margin-bottom: 110px;
@@ -394,7 +394,7 @@ a:active {
   left: 0;
 
   width: inherit;
-  height: 160px;
+  height: 115px;
 
   content: "";
 
