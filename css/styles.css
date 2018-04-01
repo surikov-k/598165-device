@@ -466,6 +466,7 @@ a:active {
 }
 
 .slider-list {
+  min-height: 485px;
   margin: 0;
   padding: 0;
 
