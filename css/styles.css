@@ -1255,15 +1255,14 @@ a:active {
 .filter {
   font-size: 14px;
 
+  box-sizing: border-box;
   width: 328px;
+  padding-left: 60px;
 
   background-color: #efefef;
 }
 
 .filter-form {
-  box-sizing: border-box;
-  width: 328px;
-  margin-left: 60px;
   padding-top: 69px;
 }
 
@@ -1467,6 +1466,7 @@ a:active {
 }
 
 .catalog-section {
+  box-sizing: border-box;
   width: 832px;
   padding-top: 70px;
   padding-bottom: 68px;
