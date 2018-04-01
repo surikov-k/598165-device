@@ -1629,6 +1629,7 @@ a:active {
 .search-input {
   font: inherit;
   line-height: 47px;
+  height: 47px;
 
   width: 356px;
   padding: 0;
